@@ -50,10 +50,6 @@ export default defineUserConfig({
     plugins: [
         pwaPlugin({
             skipWaiting: true,
-            updatePopup: {
-                message: "有新的内容更新",
-                buttonText: "立即刷新"
-            }
         }),
     ],
 })
