@@ -3,6 +3,7 @@ import { defaultTheme } from '@vuepress/theme-default'
 
 
 export default defineUserConfig({
+    base: '/docs/',
     lang: 'zh-CN',
     title: 'BaoYuan',
     description: '宝源的学习笔记记录',
