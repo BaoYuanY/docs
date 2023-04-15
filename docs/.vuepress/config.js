@@ -17,7 +17,6 @@ export default defineUserConfig({
     ],
     theme: defaultTheme({
         colorModeSwitch: true,
-        repo: 'https://github.com/YBY-BaoYuan/docs',
         repoLabel: 'GitHub',
         sidebarDepth: 2,
         lastUpdated: true,
@@ -35,16 +34,12 @@ export default defineUserConfig({
                 children: ['CentOS', 'Ubuntu'],
             },
             {
-                text: 'Go',
-                link: '/Go/',
+                text: '数据库',
+                children: ['MySQL', 'Oracle', 'PostgreSQL', 'MongoDB', 'Redis'],
             },
             {
-                text: 'Python',
-                link: '/Python/',
-            },
-            {
-                text: 'PHP',
-                link: '/PHP/',
+                text: '编程语言',
+                children: ['Python', 'Go', 'Java', 'PHP'],
             }
         ]
     }),
