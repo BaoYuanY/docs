@@ -30,8 +30,8 @@ export default defineUserConfig({
                 link: '/',
             },
             {
-                text: 'Linux',
-                children: ['CentOS', 'Ubuntu'],
+                text: '操作系统',
+                children: ['Linux', 'MacOS', 'Windows'],
             },
             {
                 text: '数据库',
