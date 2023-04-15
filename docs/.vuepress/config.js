@@ -1,6 +1,7 @@
 import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from '@vuepress/theme-default'
 import { pwaPlugin } from '@vuepress/plugin-pwa'
+import { pwaPopupPlugin } from '@vuepress/plugin-pwa-popup'
 
 
 export default defineUserConfig({
@@ -48,8 +49,14 @@ export default defineUserConfig({
         ]
     }),
     plugins: [
-        pwaPlugin({
-            skipWaiting: true,
+        pwaPlugin(),
+        pwaPopupPlugin({
+            locales: {
+                '/': {
+                    message: '发现新内容可用',
+                    buttonText: '刷新',
+                }
+            },
         }),
     ],
 })
