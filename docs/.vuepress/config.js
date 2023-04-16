@@ -1,6 +1,7 @@
 import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from '@vuepress/theme-default'
 import { pwaPlugin } from '@vuepress/plugin-pwa'
+import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 
 
 export default defineUserConfig({
@@ -45,6 +46,9 @@ export default defineUserConfig({
     plugins: [
         pwaPlugin({
             skipWaiting: true,
+        }),
+        googleAnalyticsPlugin({
+            id: 'G-9LC7BR4R2B',
         }),
     ],
 })
