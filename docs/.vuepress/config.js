@@ -2,6 +2,7 @@ import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from '@vuepress/theme-default'
 import { pwaPlugin } from '@vuepress/plugin-pwa'
 import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
+import { searchPlugin } from '@vuepress/plugin-search'
 
 
 export default defineUserConfig({
@@ -49,6 +50,13 @@ export default defineUserConfig({
         }),
         googleAnalyticsPlugin({
             id: 'G-9LC7BR4R2B',
+        }),
+        searchPlugin({
+            locales: {
+                placeholder: "搜索",
+                maxSuggestions: 10,
+                isSearchable: (page) => page.path !== '/',
+            }
         }),
     ],
 })
