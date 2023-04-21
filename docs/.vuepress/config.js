@@ -18,7 +18,8 @@ export default defineUserConfig({
     ],
     theme: defaultTheme({
         colorModeSwitch: true,
-        repoLabel: 'GitHub',
+        repoLabel: 'IT自述',
+        repo: 'https://www.itzishu.com/',
         sidebarDepth: 2,
         lastUpdated: true,
         lastUpdatedText: '更新时间',
