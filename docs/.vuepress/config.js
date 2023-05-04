@@ -1,8 +1,8 @@
-import { defineUserConfig } from 'vuepress'
-import { defaultTheme } from '@vuepress/theme-default'
-import { pwaPlugin } from '@vuepress/plugin-pwa'
-import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
-import { searchPlugin } from '@vuepress/plugin-search'
+import {defineUserConfig} from 'vuepress'
+import {defaultTheme} from '@vuepress/theme-default'
+import {pwaPlugin} from '@vuepress/plugin-pwa'
+import {googleAnalyticsPlugin} from '@vuepress/plugin-google-analytics'
+import {searchPlugin} from '@vuepress/plugin-search'
 
 
 export default defineUserConfig({
@@ -10,16 +10,16 @@ export default defineUserConfig({
     title: 'BaoYuan',
     description: '宝源的学习笔记记录',
     head: [
-        ['link', { rel: 'icon', href: '/tx.png' }],
-        ['meta', { name: 'author', href: '宝源笔记' }],
-        ['meta', { name: 'BaoYuan', href: '宝源笔记' }],
-        ['link', { rel: 'manifest', href: '/manifest.webmanifest' }],
-        ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+        ['link', {rel: 'icon', href: '/tx.png'}],
+        ['meta', {name: 'author', href: '宝源笔记'}],
+        ['meta', {name: 'BaoYuan', href: '宝源笔记'}],
+        ['link', {rel: 'manifest', href: '/manifest.webmanifest'}],
+        ['meta', {name: 'theme-color', content: '#3eaf7c'}],
     ],
     theme: defaultTheme({
         colorModeSwitch: true,
-        repoLabel: 'IT自述',
-        repo: 'https://www.itzishu.com/',
+        repoLabel: 'Telegram',
+        repo: 'https://t.me/BaoYuanY',
         sidebarDepth: 2,
         lastUpdated: true,
         lastUpdatedText: '更新时间',
@@ -42,7 +42,20 @@ export default defineUserConfig({
             {
                 text: '编程语言',
                 children: ['Python', 'Go', 'Java', 'PHP'],
-            }
+            },
+            {
+                text: '友链',
+                children: [
+                    {
+                        text: 'IT自述',
+                        link: 'https://www.itzishu.com/',
+                    }
+                ],
+            },
+            // {
+            //     text: 'GitHub',
+            //     link: 'https://github.com/BaoYuanY',
+            // }
         ]
     }),
     plugins: [
