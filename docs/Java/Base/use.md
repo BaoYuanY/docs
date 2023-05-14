@@ -216,6 +216,7 @@ public class DataTypeDemo {
         /*
          * char
          * 1个
+         * 0-65535
          */
         char a = 'b';  //字符只能用单引号存储，且要使用单引号
         char c = '\'';  //无法存储特殊字符，需要转义
@@ -223,15 +224,107 @@ public class DataTypeDemo {
 }
 ```
 ## 类型转换
-### 1. 自动类型转换
+### 1. 自动类型(隐式)转换
 <p>将小的类型装载到大的类型中的过程</p>
+byte->short->int->long->float->double
 
+```java
+//int的最大容量为-2147483648～2147483637
+long a = 1000000000;
 
-### 2. 强制类型转换
-<p>将大的类型装载到小类型中的过程</p>
+int b = 100;  //没有发生自动类型转换
+long c = a;   //发生了自动类型转换
+double d = b; //发生了自动类型转换
+```
 
+### 2. 强制类型(显式)转换
+<p>将大的类型装载到小类型中的过程 强转有风险 使用须谨慎</p>
 
+```java
+int a = 200;
+byte b = (byte)a;
 
+long c = 1000000000L;
+int d = (int)c;  //可能会出现数据溢出的风险
+
+double e = 3.14159;
+int f = (int)double; //会截断删除小数
+```
+
+### 规则
+1. 整数直接量是可以赋值给 `byte` `short` `char` 这些类型的，但不能超过当前类型的可容纳的范围。
+2. `byte` `short` `chat` 在进行运算时，系统会自动将其结果转化为int
+3. 小类型与大类型运算的数据类型为大类型
+
+## 运算符
+### 1. 数据运算符
+```java
+int a = 10;
+int b = 5;
+System.out.println(a + b);//15
+System.out.println(a - b);//5
+System.out.println(a * b);//50
+System.out.println(a / b);//2
+System.out.println(5 % 2);//1  应用PS: 可以通过区余2 来判断当前数据是否为偶数或者奇数
+//求余数的操作 有一些规则：区余操作时，左边的数据小于右边的数据 余数则为左边的数据
+System.out.println(1 % 3);//1
+System.out.println(2 % 3);//2
+System.out.println(3 % 3);//0
+```
+
+### 2. 自增自减运算符
+```java
+//单独运算时，符号在前在后都一样
+int c = 5;
+c++;
+c--;
+++c;
+--c;
+/*
+ * 参与运算时
+ * 1. 符号若在前，先执行符号对应的自增或者自减操作，然后再去参与其他运算
+ * 2. 符号若在后，先去参与其他运算，最后再去执行符号对应自增或者自减的操作
+ */
+int d = 5;
+int e = 5;
+int f = d++;
+int g = ++e;
+System.out.println(d); //6
+System.out.println(e); //6
+System.out.println(f); //5 
+System.out.println(g); //6
+//参与其他运算时，赋值的运算优先度也是最低的
+int h = 5;
+int i = 5;
+int j = --h - i--;
+System.out.println(h); //4
+System.out.println(i); //4
+System.out.println(j); //-1
+```
+> **符号在后运算分为3步**
+> 1. 先将变量里面的内容赋值给临时变量
+> 2. 再进行变量的自增操作
+> 3. 最后再将临时变量赋值给变量
+```java
+int a = 5;
+a = a++;
+/*
+ * 1. temp = a
+ * 2. a = a + 1
+ * 3. a = temp
+ */
+System.out.println(a); //5
+```
+
+### 3. 关系运算符
+
+`==` `>` `<` `>=` `<=` `!=`
+
+`&&` `||` `!`
+
+```java
+
+```
 
 
 
