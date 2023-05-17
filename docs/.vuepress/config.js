@@ -33,7 +33,10 @@ export default defineUserConfig({
             },
             {
                 text: '操作系统',
-                children: ['Linux', 'MacOS', 'Windows'],
+                children: [{
+                    text: '编程必备知识',
+                    link: '/Computer',
+                }, 'Linux', 'MacOS', 'Windows'],
             },
             {
                 text: '数据库',
