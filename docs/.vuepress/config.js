@@ -32,6 +32,10 @@ export default defineUserConfig({
                 link: '/',
             },
             {
+                text: 'Docker',
+                link: '/Docker',
+            },
+            {
                 text: '操作系统',
                 children: [{
                     text: '编程必备知识',
