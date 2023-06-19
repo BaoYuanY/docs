@@ -13,5 +13,5 @@ features:
   details: 采用笔记、摘要、图表等方式记录关键信息和思考，注重整理和归纳。
 - title: 复习
   details: 经常回顾笔记和复习材料，对重要概念有更深入的了解，重复练习和评估自己的理解。
-footer: MIT Licensed | Copyright © 2016-present Passwordgloo
+footer: MIT Licensed | Copyright © 2023-present
 ---
