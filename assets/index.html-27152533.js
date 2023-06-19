@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-16371a2c","path":"/CentOS/","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1681536796000,"contributors":[{"name":"baoyuan","email":"baoyuan0304@gmail.com","commits":1}]},"filePathRelative":"CentOS/index.md"}');export{a as data};
