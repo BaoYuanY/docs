@@ -36,6 +36,10 @@ export default defineUserConfig({
                 link: '/Docker',
             },
             {
+                text: 'Git',
+                link: '/Git',
+            },
+            {
                 text: '操作系统',
                 children: [{
                     text: '编程必备知识',
