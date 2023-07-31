@@ -47,10 +47,6 @@ export default defineUserConfig({
                 }, 'Linux', 'MacOS', 'Windows'],
             },
             {
-                text: '数据库',
-                children: ['MySQL', 'Oracle', 'PostgreSQL', 'MongoDB', 'Redis'],
-            },
-            {
                 text: '编程语言',
                 children: ['Python', 'Go', 'Java', 'PHP'],
             },
