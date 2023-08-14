@@ -13,7 +13,7 @@ export default defineUserConfig({
         ['link', {rel: 'icon', href: '/tx.png'}],
         ['meta', {name: 'author', href: '宝源笔记'}],
         ['meta', {name: 'BaoYuan', href: '宝源笔记'}],
-        ['link', {rel: 'manifest', href: '/manifest.webmanifest'}],
+        //['link', {rel: 'manifest', href: '/manifest.webmanifest'}],
         ['meta', {name: 'theme-color', content: '#3eaf7c'}],
     ],
     theme: defaultTheme({
@@ -31,25 +31,25 @@ export default defineUserConfig({
                 text: '首页',
                 link: '/',
             },
-            {
-                text: 'Docker',
-                link: '/Docker',
-            },
+            // {
+            //     text: 'Docker',
+            //     link: '/Docker',
+            // },
             {
                 text: 'Git',
                 link: '/Git',
             },
-            {
-                text: '操作系统',
-                children: [{
-                    text: '编程必备知识',
-                    link: '/Computer',
-                }, 'Linux', 'MacOS', 'Windows'],
-            },
-            {
-                text: '编程语言',
-                children: ['Python', 'Go', 'Java', 'PHP'],
-            },
+            // {
+            //     text: '操作系统',
+            //     children: [{
+            //         text: '编程必备知识',
+            //         link: '/Computer',
+            //     }, 'Linux', 'MacOS', 'Windows'],
+            // },
+            // {
+            //     text: '编程语言',
+            //     children: ['Python', 'Go', 'Java', 'PHP'],
+            // },
             {
                 text: '友链',
                 children: [
@@ -58,6 +58,10 @@ export default defineUserConfig({
                         link: 'https://www.itzishu.com/',
                     }
                 ],
+            },
+            {
+                text: '博客',
+                link: 'https://blog.yangbaoyuan.cn',
             },
             // {
             //     text: 'GitHub',
