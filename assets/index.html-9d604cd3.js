@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-f5c08590","path":"/Oracle/","title":"","lang":"zh-CN","frontmatter":{},"headers":[],"git":{"updatedTime":1681557653000,"contributors":[{"name":"baoyuan","email":"baoyuan0304@gmail.com","commits":1}]},"filePathRelative":"Oracle/index.md"}');export{a as data};
