@@ -36,7 +36,7 @@ export default defineUserConfig({
             //     link: '/Docker',
             // },
             {
-                text: 'Git',
+                text: 'Git三剑客',
                 link: '/Git',
             },
             // {
